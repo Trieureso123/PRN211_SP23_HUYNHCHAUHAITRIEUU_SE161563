@@ -1,0 +1,149 @@
+﻿@page
+@model ASP.NETWebApplication.Pages.HomeModel
+@using Microsoft.AspNetCore.Http
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Home Page</title>
+</head>
+<body>
+    <h2 style="color: red; text-align: center">Welcome @HttpContext.Session.GetString("Email")</h2>
+    <br/>
+    <form method="post" asp-page="Home">
+        <table>
+            <tr>
+                <td>
+                    <input type="text" asp-for="@Model.searchCandidateProfle"
+                           placeholder="Search by FullName or Birthday" /></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td><input type="submit" value="Search" /></td>
+            </tr>
+        </table>
+    </form>
+    <br/>
+    <h1>Library</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.candidateProfile.CandidateId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.candidateProfile.Fullname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.candidateProfile.Birthday)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.candidateProfile.ProfileShortDescription)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.candidateProfile.ProfileUrl)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.candidateProfile.PostingId)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.candidateProfileListResult)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CandidateId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Fullname)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Birthday)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProfileShortDescription)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProfileUrl)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PostingId)
+                </td>
+@*                    <td>
+                    <a asp-page="./GetBook" asp-route-id="@item.BookId">Get Book</a> |
+                    <a asp-page="./Edit" asp-route-id="@item.BookId">Edit</a> |
+                    <a asp-page="./Details" asp-route-id="@item.BookId">Details</a> |
+                    <a asp-page="./Delete" asp-route-id="@item.BookId">Delete</a>
+                </td>*@
+            </tr>
+        }
+    </tbody>
+    </table>
+    <br />
+    <h1>Search Result</h1>
+    <br />
+    @if(Model.candidateProfile == null)
+    {
+        <h4 style="color: red; font-weight: bolder"> @Model.Msg </h4>
+    }
+    <table>
+        <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.candidateProfile.CandidateId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.candidateProfile.Fullname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.candidateProfile.Birthday)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.candidateProfile.ProfileShortDescription)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.candidateProfile.ProfileUrl)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.candidateProfile.PostingId)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    @if (Model.candidateProfile != null)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => Model.candidateProfile.CandidateId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.candidateProfile.Fullname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.candidateProfile.Birthday)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.candidateProfile.ProfileShortDescription)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.candidateProfile.ProfileUrl)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.candidateProfile.PostingId)
+            </td>
+        </tr>
+    }
+    
+        </tbody>
+    </table>
+</body>
+</html>

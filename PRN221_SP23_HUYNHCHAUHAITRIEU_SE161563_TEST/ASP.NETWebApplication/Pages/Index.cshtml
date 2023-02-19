@@ -1,0 +1,33 @@
+﻿@page
+@model IndexModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login Page</title>
+</head>
+<body>
+	<h3>Login Form</h3>
+    <h4 style="color: red; font-weight: bolder"> @Model.Msg </h4>
+    <form method="post" asp-page="index">
+        <table>
+            <tr>
+                <td>Email</td>
+                <td><input type="text" asp-for="@Model.account.Email" placeholder="Email"/></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" asp-for="@Model.account.Password" placeholder="Password"/></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td><input type="submit" value="Login" /></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

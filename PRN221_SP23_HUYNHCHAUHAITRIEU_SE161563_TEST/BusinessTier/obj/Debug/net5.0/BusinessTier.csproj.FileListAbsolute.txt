@@ -1,0 +1,15 @@
+F:\ProjectStudy\PRN_221\PRN_PE\PRN221_SP23_HUYNHCHAUHAITRIEU_SE161563_TEST\BusinessTier\bin\Debug\net5.0\BusinessTier.deps.json
+F:\ProjectStudy\PRN_221\PRN_PE\PRN221_SP23_HUYNHCHAUHAITRIEU_SE161563_TEST\BusinessTier\bin\Debug\net5.0\BusinessTier.dll
+F:\ProjectStudy\PRN_221\PRN_PE\PRN221_SP23_HUYNHCHAUHAITRIEU_SE161563_TEST\BusinessTier\bin\Debug\net5.0\BusinessTier.pdb
+F:\ProjectStudy\PRN_221\PRN_PE\PRN221_SP23_HUYNHCHAUHAITRIEU_SE161563_TEST\BusinessTier\bin\Debug\net5.0\DataAccess.dll
+F:\ProjectStudy\PRN_221\PRN_PE\PRN221_SP23_HUYNHCHAUHAITRIEU_SE161563_TEST\BusinessTier\bin\Debug\net5.0\DataAccess.pdb
+F:\ProjectStudy\PRN_221\PRN_PE\PRN221_SP23_HUYNHCHAUHAITRIEU_SE161563_TEST\BusinessTier\obj\Debug\net5.0\BusinessTier.csproj.AssemblyReference.cache
+F:\ProjectStudy\PRN_221\PRN_PE\PRN221_SP23_HUYNHCHAUHAITRIEU_SE161563_TEST\BusinessTier\obj\Debug\net5.0\BusinessTier.GeneratedMSBuildEditorConfig.editorconfig
+F:\ProjectStudy\PRN_221\PRN_PE\PRN221_SP23_HUYNHCHAUHAITRIEU_SE161563_TEST\BusinessTier\obj\Debug\net5.0\BusinessTier.AssemblyInfoInputs.cache
+F:\ProjectStudy\PRN_221\PRN_PE\PRN221_SP23_HUYNHCHAUHAITRIEU_SE161563_TEST\BusinessTier\obj\Debug\net5.0\BusinessTier.AssemblyInfo.cs
+F:\ProjectStudy\PRN_221\PRN_PE\PRN221_SP23_HUYNHCHAUHAITRIEU_SE161563_TEST\BusinessTier\obj\Debug\net5.0\BusinessTier.csproj.CoreCompileInputs.cache
+F:\ProjectStudy\PRN_221\PRN_PE\PRN221_SP23_HUYNHCHAUHAITRIEU_SE161563_TEST\BusinessTier\obj\Debug\net5.0\BusinessTier.csproj.CopyComplete
+F:\ProjectStudy\PRN_221\PRN_PE\PRN221_SP23_HUYNHCHAUHAITRIEU_SE161563_TEST\BusinessTier\obj\Debug\net5.0\BusinessTier.dll
+F:\ProjectStudy\PRN_221\PRN_PE\PRN221_SP23_HUYNHCHAUHAITRIEU_SE161563_TEST\BusinessTier\obj\Debug\net5.0\refint\BusinessTier.dll
+F:\ProjectStudy\PRN_221\PRN_PE\PRN221_SP23_HUYNHCHAUHAITRIEU_SE161563_TEST\BusinessTier\obj\Debug\net5.0\BusinessTier.pdb
+F:\ProjectStudy\PRN_221\PRN_PE\PRN221_SP23_HUYNHCHAUHAITRIEU_SE161563_TEST\BusinessTier\obj\Debug\net5.0\ref\BusinessTier.dll
