@@ -6179,11 +6179,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\ProjectStudy\\PRN_221\\PRN_PE\\PRN221_SP23_HUYNHCHAUHAITRIEU_SE161563_TEST\\API\\API.csproj",
+      "projectUniqueName": "F:\\ProjectStudy\\PRN_221\\PRN_PE\\PRN211_SP23_HUYNHCHAUHAITRIEUU_SE161563\\PRN221_SP23_HUYNHCHAUHAITRIEU_SE161563_TEST\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "F:\\ProjectStudy\\PRN_221\\PRN_PE\\PRN221_SP23_HUYNHCHAUHAITRIEU_SE161563_TEST\\API\\API.csproj",
+      "projectPath": "F:\\ProjectStudy\\PRN_221\\PRN_PE\\PRN211_SP23_HUYNHCHAUHAITRIEUU_SE161563\\PRN221_SP23_HUYNHCHAUHAITRIEU_SE161563_TEST\\API\\API.csproj",
       "packagesPath": "C:\\Users\\Hai Trieu\\.nuget\\packages\\",
-      "outputPath": "F:\\ProjectStudy\\PRN_221\\PRN_PE\\PRN221_SP23_HUYNHCHAUHAITRIEU_SE161563_TEST\\API\\obj\\",
+      "outputPath": "F:\\ProjectStudy\\PRN_221\\PRN_PE\\PRN211_SP23_HUYNHCHAUHAITRIEUU_SE161563\\PRN221_SP23_HUYNHCHAUHAITRIEU_SE161563_TEST\\API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -6204,11 +6204,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "F:\\ProjectStudy\\PRN_221\\PRN_PE\\PRN221_SP23_HUYNHCHAUHAITRIEU_SE161563_TEST\\BusinessTier\\BusinessTier.csproj": {
-              "projectPath": "F:\\ProjectStudy\\PRN_221\\PRN_PE\\PRN221_SP23_HUYNHCHAUHAITRIEU_SE161563_TEST\\BusinessTier\\BusinessTier.csproj"
+            "F:\\ProjectStudy\\PRN_221\\PRN_PE\\PRN211_SP23_HUYNHCHAUHAITRIEUU_SE161563\\PRN221_SP23_HUYNHCHAUHAITRIEU_SE161563_TEST\\BusinessTier\\BusinessTier.csproj": {
+              "projectPath": "F:\\ProjectStudy\\PRN_221\\PRN_PE\\PRN211_SP23_HUYNHCHAUHAITRIEUU_SE161563\\PRN221_SP23_HUYNHCHAUHAITRIEU_SE161563_TEST\\BusinessTier\\BusinessTier.csproj"
             },
-            "F:\\ProjectStudy\\PRN_221\\PRN_PE\\PRN221_SP23_HUYNHCHAUHAITRIEU_SE161563_TEST\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "F:\\ProjectStudy\\PRN_221\\PRN_PE\\PRN221_SP23_HUYNHCHAUHAITRIEU_SE161563_TEST\\DataAccess\\DataAccess.csproj"
+            "F:\\ProjectStudy\\PRN_221\\PRN_PE\\PRN211_SP23_HUYNHCHAUHAITRIEUU_SE161563\\PRN221_SP23_HUYNHCHAUHAITRIEU_SE161563_TEST\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "F:\\ProjectStudy\\PRN_221\\PRN_PE\\PRN211_SP23_HUYNHCHAUHAITRIEUU_SE161563\\PRN221_SP23_HUYNHCHAUHAITRIEU_SE161563_TEST\\DataAccess\\DataAccess.csproj"
             }
           }
         }

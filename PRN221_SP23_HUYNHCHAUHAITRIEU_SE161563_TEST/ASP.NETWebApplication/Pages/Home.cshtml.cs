@@ -53,5 +53,22 @@ namespace ASP.NETWebApplication.Pages
             OnGet();
             return Page();
         }
+
+        public IActionResult OnDelete()
+        {
+            for(int i = 0; i < candidateProfileListResult.Count; i++) 
+            {
+                if (candidateProfileListResult[i].CandidateId == searchCandidateProfle)
+                {
+                    candidateProfileListResult.RemoveAt(i); 
+                    Msg = "The Data has been deleted!";
+                    OnGet();
+                    return Page();
+                }       
+            }
+            Msg = "There is no data to delete";
+            OnGet();
+            return Page();
+        }
     }
 }

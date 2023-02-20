@@ -10,8 +10,7 @@ namespace BusinessTier.Repository
     public interface ICandidateProfileRepository
     {
         List<CandidateProfile> GetAllCandidateProfile();
-        CandidateProfile SearchCandidateByFullNameOrBirthday(String candidateSearch);
-    }
+        CandidateProfile SearchCandidateByFullNameOrBirthday(String candidateSearch);    }
 
     public class CandidateProfileRepository : ICandidateProfileRepository
     {

@@ -52,6 +52,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.candidateProfile.PostingId)
             </th>
+            <th>
+                Update Option    
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -77,15 +80,15 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.PostingId)
                 </td>
-@*                    <td>
-                    <a asp-page="./GetBook" asp-route-id="@item.BookId">Get Book</a> |
-                    <a asp-page="./Edit" asp-route-id="@item.BookId">Edit</a> |
-                    <a asp-page="./Details" asp-route-id="@item.BookId">Details</a> |
-                    <a asp-page="./Delete" asp-route-id="@item.BookId">Delete</a>
-                </td>*@
+                <td>
+                   <button type="submit" asp-page-handler="delete"
+                            asp-route-id="@item.CandidateId">
+                        delete
+                   </button>
+                </td>
             </tr>
         }
-    </tbody>
+    </tbody> 
     </table>
     <br />
     <h1>Search Result</h1>
