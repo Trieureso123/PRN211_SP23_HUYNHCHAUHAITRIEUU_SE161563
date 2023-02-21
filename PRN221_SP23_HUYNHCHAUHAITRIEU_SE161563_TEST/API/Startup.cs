@@ -37,6 +37,7 @@ namespace Book_API
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "API", Version = "v1" });
             });
             services.AddScoped<IHrAccountRepository, HrAccountRepository>();
+            services.AddScoped<IJobPostingRepository, JobPostingRepository>();
             services.AddDbContext<CandidateManagementContext>(option =>
             {
                 option.UseSqlServer(Configuration.GetConnectionString("SQLServerDatabase"));

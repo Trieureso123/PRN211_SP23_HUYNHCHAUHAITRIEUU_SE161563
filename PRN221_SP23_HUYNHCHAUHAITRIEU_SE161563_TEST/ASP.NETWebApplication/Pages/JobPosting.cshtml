@@ -1,0 +1,47 @@
+﻿@page
+@model PrivacyModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JOB POSTING REGISTER</title>
+</head>
+<body>
+    <h1> CREATE JOB POSTING FORM</h1>
+
+    <form method="post">
+        <fieldset>
+            <legend>Add Customer</legend>
+            <div>
+                <label for="CompanyName">Job Posting ID:</label>
+                <input type="text" name="@Model.jobPostingRequest.PostingId" value="" />
+            </div>
+            <div>
+                <label for="ContactName">Job Posting Title:</label>
+                <input type="text" name="@Model.jobPostingRequest.JobPostingTitle" value="" />
+            </div>
+            <div>
+                <label for="Employees">Job Posting Description:</label>
+                <input type="text" name="@Model.jobPostingRequest.Description" value="" />
+            </div>
+<div>
+                <label for="Employees">Job Posting Dates:</label>
+                <input type="text" name="@Model.jobPostingRequest.PostedDate" value="" />
+            </div>
+            <div>
+                <label>&nbsp;</label>
+                <input type="submit" value="Submit" class="submit" />
+            </div>
+        </fieldset>
+    </form>
+
+
+
+
+
+</body>
+</html>
+

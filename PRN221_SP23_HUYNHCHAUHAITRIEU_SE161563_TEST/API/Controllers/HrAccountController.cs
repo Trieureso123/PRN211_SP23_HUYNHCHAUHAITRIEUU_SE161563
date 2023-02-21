@@ -11,20 +11,25 @@ namespace API.Controllers
     [ApiController]
     public class HrAccountController : ControllerBase
     {
-        private readonly IHrAccountRepository _bookService;
+        private readonly IJobPostingRepository _bookService;
 
-        public HrAccountController(IHrAccountRepository bookService)
+        public HrAccountController(IJobPostingRepository bookService)
         {
             _bookService = bookService;
         }
         // GET: api/<BooksController>
+        //[HttpGet]
+        //public ActionResult<List<HRAccount>> Get()
+        //{
+        //    var list = _bookService.GetAllAccount();
+        //    return Ok(list);
+        //}
         [HttpGet]
-        public ActionResult<List<HRAccount>> Get()
+        public ActionResult<List<JobPosting>> Get()
         {
-            var list = _bookService.GetAllAccount();
+            var list = _bookService.GetAllJobs();
             return Ok(list);
         }
 
-        
     }
 }

@@ -28,6 +28,7 @@ namespace ASP.NETWebApplication
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddScoped<IHrAccountRepository,HrAccountRepository>();
             services.AddScoped<ICandidateProfileRepository, CandidateProfileRepository>();
+            services.AddScoped<IJobPostingRepository, JobPostingRepository>();
             services.AddDbContext<CandidateManagementContext>(option =>
             {
                 option.UseSqlServer(Configuration.GetConnectionString("SQLServerDatabase"));
