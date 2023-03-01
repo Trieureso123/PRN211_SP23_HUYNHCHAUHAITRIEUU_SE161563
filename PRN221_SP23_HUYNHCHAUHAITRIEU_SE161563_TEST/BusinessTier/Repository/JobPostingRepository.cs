@@ -11,7 +11,8 @@ namespace BusinessTier.Repository
     public interface IJobPostingRepository
     {
         List<JobPosting> GetAllJobs();
-        JobPostingRequest AddJobPosting(JobPostingRequest postingRequest);
+        JobPosting AddJobPosting(JobPostingRequest request);
+        JobPosting UpdateJobPosting(UpdateJobPostingRequest request);
     }
 
     public class JobPostingRepository : IJobPostingRepository
@@ -23,7 +24,7 @@ namespace BusinessTier.Repository
             _candidateManagementContext = candidateManagementContext;
         }
 
-        public JobPostingRequest AddJobPosting(JobPostingRequest postingRequest)
+        public JobPosting AddJobPosting(JobPostingRequest postingRequest)
         {
             try
             {
@@ -38,7 +39,7 @@ namespace BusinessTier.Repository
                 _candidateManagementContext.JobPostings.Add(jobPosting);
                 _candidateManagementContext.SaveChanges();
 
-                return postingRequest;
+                return jobPosting;
             }
             catch (Exception ex)
             {
@@ -60,6 +61,33 @@ namespace BusinessTier.Repository
                 jobPostingList.Add(jobPosting);
             }
             return jobPostingList;
+        }
+
+        public JobPosting UpdateJobPosting(UpdateJobPostingRequest request)
+        {
+            try
+            {
+                var jobPosting = _candidateManagementContext.JobPostings.
+                                        FirstOrDefault(x => x.PostingId == request.PostingId);
+                if (jobPosting == null)
+                {
+                    return null;
+                }
+
+                //mapping 
+                jobPosting.JobPostingTitle = request.JobPostingTitle;
+                jobPosting.Description = request.Description;
+                jobPosting.PostedDate = DateTime.Now;
+
+                _candidateManagementContext.JobPostings.Update(jobPosting);
+                _candidateManagementContext.SaveChanges();
+
+                return jobPosting;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
         }
     }
 }

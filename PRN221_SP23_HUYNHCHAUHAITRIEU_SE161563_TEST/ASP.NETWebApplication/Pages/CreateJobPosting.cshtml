@@ -1,0 +1,53 @@
+﻿@page
+@model CreateJobPostingModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>JOB POSTING REGISTER</title>
+</head>
+<body>
+    <h1> CREATE JOB POSTING FORM</h1>
+    <h4 style="color: red; font-weight: bolder"> @Model.Msg </h4>
+    <form method="post" asp-page="JobPosting">
+        <table>
+            <tr>
+                <td>Posting Id</td>
+                <td>
+                    <input type="text" asp-for="@Model.jobPostingRequest.PostingId" placeholder="Job Posting Id" />
+                </td>
+            </tr>
+            <tr>
+                <td>Job Posting Title</td>
+                <td>
+                    <input type="text" asp-for="@Model.jobPostingRequest.JobPostingTitle" placeholder="Job Posting Title" />
+                </td>
+            </tr>
+            <tr>
+                <td>Job Posting Description</td>
+                <td>
+                    <input type="text" asp-for="@Model.jobPostingRequest.Description" placeholder="Job Posting Description" />
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td><input type="submit" value="submit" /></td>
+                <td>
+                    <a asp-page="Home">
+                        Home Page
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <br />
+    <br />
+    <br />
+
+</body>
+</html>
+
