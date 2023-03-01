@@ -25,16 +25,25 @@ namespace BusinessTier.Repository
 
         public JobPostingRequest AddJobPosting(JobPostingRequest postingRequest)
         {
-            //mapping 
-            JobPosting jobPosting = new JobPosting();
-            postingRequest.PostingId = jobPosting.PostingId;
-            postingRequest.JobPostingTitle = jobPosting.JobPostingTitle;
-            postingRequest.Description = jobPosting.Description;
-            postingRequest.PostedDate = jobPosting.PostedDate;
-            _candidateManagementContext.JobPostings.Add(jobPosting);
-            _candidateManagementContext.SaveChanges();
+            try
+            {
+                //mapping 
+                JobPosting jobPosting = new JobPosting();
+                jobPosting.PostingId = postingRequest.PostingId;
+                jobPosting.JobPostingTitle = postingRequest.JobPostingTitle;
+                jobPosting.Description = postingRequest.Description;
+                jobPosting.PostedDate = DateTime.Now;
 
-            return postingRequest;
+                //add Job Posting
+                _candidateManagementContext.JobPostings.Add(jobPosting);
+                _candidateManagementContext.SaveChanges();
+
+                return postingRequest;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
         }
 
         public List<JobPosting> GetAllJobs()
