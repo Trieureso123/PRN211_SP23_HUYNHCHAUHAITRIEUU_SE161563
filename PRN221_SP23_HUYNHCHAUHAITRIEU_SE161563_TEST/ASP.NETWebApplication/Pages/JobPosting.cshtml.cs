@@ -11,19 +11,19 @@ using System.Threading.Tasks;
 
 namespace ASP.NETWebApplication.Pages
 {
-    public class PrivacyModel : PageModel
+    public class JobPostingModel : PageModel
     {
-        private readonly ILogger<PrivacyModel> _logger;
-
-        private readonly IJobPostingRepository _jobPostingRepository;
+        private readonly ILogger<JobPostingModel> _logger;
 
         [BindProperty]
-        string Msg { get; set; }
+        public string Msg { get; set; }
 
         [BindProperty]
         public JobPostingRequest jobPostingRequest { get; set; }
 
-        public PrivacyModel(ILogger<PrivacyModel> logger, IJobPostingRepository jobPostingRepository)
+        private readonly IJobPostingRepository _jobPostingRepository;
+
+        public JobPostingModel(ILogger<JobPostingModel> logger, IJobPostingRepository jobPostingRepository)
         {
             _logger = logger;
             _jobPostingRepository = jobPostingRepository;
